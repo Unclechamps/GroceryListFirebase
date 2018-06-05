@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="site.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="create">
+        <h1>Grocery List</h1>
+        <input type="text" id="categoryTitleTextBox" placeholder="e.g. HEB, Kroger"/>
+        <button id="createCategory">New Category</button>
+      </div>
+      <div class="groceryList">
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAbGbBKIZycoq5R8DuaUGBAFqpxOqN4lwo",
+    authDomain: "grocery-app-2fa25.firebaseapp.com",
+    databaseURL: "https://grocery-app-2fa25.firebaseio.com",
+    projectId: "grocery-app-2fa25",
+    storageBucket: "grocery-app-2fa25.appspot.com",
+    messagingSenderId: "631336845320"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="site.js"></script>
+
+</html>
